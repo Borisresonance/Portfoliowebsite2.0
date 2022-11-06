@@ -1,0 +1,88 @@
+.form-div{
+    padding: 20px;
+}
+footer, footer a{
+    color: #370a6d;
+    font-size: 25px;
+}
+#contacto{
+    background-image: url("../images/fondo-contacto.png");
+    background-size:cover;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+@media (max-width: 750px){
+    #inicio, #contacto {
+        background-image: url(../images/fondo-proyectos.png);
+    }
+    #inicio .input-home p {
+        color: #E20000;
+        border: 1px solid #E20000;
+    }
+    
+    footer a{
+    color: #E20000;
+}
+}
+ 
+
+h1{
+    color: #E20000;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+textarea{
+    height: 180px;
+}
+
+.parrafo{
+    border:1px solid white;
+    border-radius: 20px;
+    color: azure;
+    font-weight: bold;
+}
+nav .active {
+    border: 1px solid #E20000;
+    border-radius: 20px;
+}
+.div-rocket{
+    height: 450px;
+}
+.rocket{
+    height: 400px; 
+}
+.rocket:hover{
+    height: 440px;
+}
+.btn-rojo {
+    background-color: #E20000;
+    color: white;
+    font-weight: 100;
+}
+.whatsapp a {
+    color: white;
+}
+.whatsapp{
+    background-color:#370a6d;
+    color: white;
+    width: 60px;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 0 15px 0;
+    right:80px;
+    position: fixed;
+    bottom: 0px;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; 
+  font-family: inherit;
+ 
+  line-height: inherit;
+}
