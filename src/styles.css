@@ -1,0 +1,321 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+section{
+
+   background-color:white;
+   font-family: 'Orbitron', sans-serif;
+   }
+
+.hero{
+    background-color: #01083a;
+    height: 100vh;
+    color:white;
+    font-size: 40px;
+}
+
+footer{
+    padding: 80px;
+    background-color: black;
+    color:blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+ul{
+    display:flex;
+    list-style-type:none;
+    width: 800px;
+    margin-left:10px;
+    text-align: left;
+    justify-content:space-evenly;
+    font-size:30px;
+}
+
+
+
+li{
+
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+h1{
+    font-size: 90px;
+    margin: 0;
+    
+}
+
+h2{
+    
+    font-size: 40px;
+    color: #01083a;
+    margin-bottom: 20px;
+    /* Spacing between title and paragraph */
+        
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:black
+}
+.subtext{
+    font-size:15px;
+    font-weight:300;
+}
+
+.subtext{
+    font-size:15px;
+    font-weight:300;
+}
+
+.hero-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* This distributes the space evenly */
+    align-items: center;  /* This centers the items horizontally */
+    height: 100%;
+}
+
+
+
+.hero-text{
+    text-align: center; 
+    
+}
+
+.button{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    border-radius:30px;
+    text-align: center;
+    background: #799be6;
+    color: white;
+    transition: .5s ease;
+    font-size: 30px;
+    font-weight:300;
+    
+}
+
+.button:hover{
+    background:transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset,
+                0 0 10px 4px #799be6;
+    border-radius: 10px;
+}
+
+.button:active{
+    background-color: yellow ;
+    color:black;
+}
+
+
+
+.socials {
+    position: fixed;
+    top: 50%;  /* Center it vertically */
+    right: 0; /* Put it on the right edge of the screen */
+    transform: translateY(-50%);  /* Centering trick */
+}
+
+
+.logo{
+    size:40px;
+}
+
+.social {
+    margin-bottom: 10px;  /* Spacing between icons */
+}
+
+.sub-section{
+    display:flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.headshot{  
+    border-radius: 50%;
+    /* Rounds the image */
+    max-width: 300px;
+    /* Adjust based on your preference */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between the images */
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(126, 126, 126);
+    margin: 10px;
+    background-color: #d9dbe9;
+    color: white;
+    padding: 10px; /* added padding for breathing space */
+    border-radius: 10px; /* optional: makes the edges rounded */
+}
+.project-image {
+    width: 270px; /* adjusted to fit the new padding */
+    margin-top: 10px;
+    border-radius: 10px; /* optional: rounds image edges */
+}
+.project-link {
+    text-decoration: none;
+    color: lightgray; /* make it visible against dark background */
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.Project-Container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .Project-Container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.sub-section-alternative{
+   display: flex;
+   flex-direction: column;
+   text-align:center; 
+   padding:60px;
+}
+
+.project-image{
+    margin-top: 25px;
+    width:250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+.hamburger{
+    display:none;
+    
+
+}
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger{
+        display:block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin-left: 20px;
+        align-self:flex-end;
+
+    }
+
+    ul{
+        display:none;
+        background-color: #020c57;
+        margin:0px;
+        
+    }
+
+    ul.show{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;  /* taking the full viewport width */
+        margin: 0 auto;
+    }
+
+    nav {
+        display:flex;
+        flex-direction: column-reverse;
+        background-color: #020c57;
+    }
+
+    .logo{
+         display: none;
+    }
+
+    
+
+        /* Container to space out the section */
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        }
+    
+    .information {
+        flex: 1;
+        padding-right: 50px;  /* Spacing between text and image */
+        padding-bottom: 20px;  /* Add spacing for when the content wraps */
+        }
+        @media only screen and (max-width: 768px) {
+            .about-container {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                align-items: center;
+            }
+        
+            .information {
+                padding-right: 0;  /* Reset padding */
+            }
+        }
+        
+        /* Additional styling for responsive design */
+        
+        @media only screen and (max-width: 1000px) {
+            /* Your existing styles */
+        }
+    
+
+#about-me p {
+    display: block;
+    visibility: visible;
+    color: black;  /* or any contrasting color */
+    font-size: 16px;
+}
+
+}
